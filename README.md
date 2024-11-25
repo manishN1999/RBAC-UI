@@ -30,28 +30,43 @@ Hover Effects:
 
 Low hover effects on the table rows and action buttons for a professional look.
 **Key Implementations**
-1. React Components
+
+
+**1. React Components**
+
+
 The project is structured with reusable React components for modularity and maintainability:
 Dashboard.js: The main component displaying all sections of the dashboard.
 FaIcons: Icons from react-icons are used for visual enhancements.
-2. State Management
-useState Hook:
+
+
+**2. State Management**
+
+
+**useState Hook:**
+
 Manages the state for users and roles.
 Example:
 const [users, setUsers] = useState([
   { id: 1, name: Manju", role: "Admin", status: "Active" },
   { id: 2, name: "Biju", role: "Editor", status: "Inactive" },
 ]);
-3. CSS Styling
+
+**3. CSS Styling**
+
 The Dashboard.css file defines the design elements:
 Professional gradient background.
 Responsive card layout with shadow and hover effects.
 Custom table design with hover effects for rows and actions.
 Stylish buttons for user actions like Edit and Delete.
-4. Action Buttons
+
+**4. Action Buttons**
+
 Edit Button:
 Logs the selected user ID in the console (can be extended to open an edit form).
+
 **Example:**
+
 const handleEditUser = (id) => {
   console.log(`Editing user with ID: ${id}`);
 };
@@ -62,10 +77,15 @@ Removes the user from the users state array.
 const handleDeleteUser = (id) => {
   setUsers(users.filter((user) => user.id !== id));
 };
+
+
 **5. User-Friendly Navigation**
 Navigation bar includes options like Manage Users, Manage Roles, and Settings.
 Smooth hover animations make navigation interactive and visually pleasing.
+
+
 **6. Responsive Design**
+
 CSS media queries ensure the dashboard is usable on mobile devices.
 Example:
 
@@ -82,7 +102,9 @@ Removed unused setRoles.
 Logged the userToEdit variable for debugging:
 
 console.log(`Editing user with ID: ${id}`);
-File Structure
+
+**File Structure**
+
 scss
 
 src/
