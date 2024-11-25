@@ -158,6 +158,7 @@ Open your browser and navigate to:
 http://localhost:3000
 
 **Future Enhancements**
+
 Add a form modal for editing user details.
 Implement authentication and role-based access control.
 Integrate with a backend API for persistent data storage.
